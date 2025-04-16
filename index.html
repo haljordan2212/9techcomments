@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Report Card Comment Generator</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+max-width: 800px;
+margin: auto;
+padding: 20px;
+}
+select, input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+font-size: 1rem;
+}
+select optgroup[label="Technical Skills"] {
+color: #007BFF;
+}
+select optgroup[label="Design & Creativity"] {
+color: #800080;
+}
+select optgroup[label="Collaboration & Communication"],
+select optgroup[label="Digital Citizenship & Communication"] {
+color: #009688;
+}
+select optgroup[label="Organization & Responsibility"],
+select optgroup[label="Organization & Workflow"] {
+color: #FF8C00;
+}
+select optgroup[label="Time Management & Deadlines"] {
+color: #DC3545;
+}
+select optgroup[label="Mindset & Work Habits"],
+select optgroup[label="Confidence & Independence"] {
+color: #28A745;
+}
+.output {
+margin-top: 20px;
+padding: 15px;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+
+<h2>Grade 9 Tech Report Card Comment Generator</h2>
+
+<label for="studentName">Student First Name:</label>
+<input type="text" id="studentName" placeholder="e.g. Alex" />
+
+<label for="pronouns">Preferred Pronouns:</label>
+<select id="pronouns">
+<option value="">-- Select pronouns --</option>
+<option value="he/him">He/Him</option>
+<option value="she/her">She/Her</option>
+<option value="they/their">They/Their</option>
+</select>
+
+
+
+<label for="assignment">Assignment Reference:</label>
+<select id="assignment">
+<option value="">-- Select an assignment --</option>
+<option value="the Scratch project">the Scratch project</option>
+<option value="the infographic assignment">the infographic assignment</option>
+<option value="the website design project">the website design project</option>
+<option value="the group presentation">the group presentation</option>
+<option value="the digital portfolio">the digital portfolio</option>
+<option value="the photo editing assignment">the photo editing assignment</option>
+<option value="the video editing project">the video editing project</option>
+<option value="the visual effects activity">the visual effects activity</option>
+<option value="the storytelling through photo editing task">the storytelling through photo editing task</option>
+<option value="the digital head swapping assignment">the digital head swapping assignment</option>
+<option value="the green screen flying video project">the green screen flying video project</option>
+</select>
+
+<label for="strength">Student Strength:</label>
+<select id="strength">
+<option value="">-- Select a strength --</option>
+
+<optgroup label="Technical Skills">
+<option value="demonstrates strong problem-solving skills">Demonstrates strong problem-solving skills</option>
+<option value="effectively applies digital tools to complete tasks">Effectively applies digital tools to complete tasks</option>
+<option value="demonstrates clear understanding of coding fundamentals">Demonstrates clear understanding of coding fundamentals</option>
+<option value="navigates digital platforms with confidence">Navigates digital platforms with confidence</option>
+<option value="applies logical thinking to solve coding problems">Applies logical thinking to solve coding problems</option>
+<option value="builds efficient digital workflows with minimal support">Builds efficient digital workflows with minimal support</option>
+<option value="independently troubleshoots tech issues">Independently troubleshoots tech issues</option>
+<option value="quickly learns new platforms with minimal instruction">Quickly learns new platforms with minimal instruction</option>
+<option value="uses shortcuts and tools to increase productivity">Uses shortcuts and tools to increase productivity</option>
+<option value="demonstrates accuracy in coding and logic tasks">Demonstrates accuracy in coding and logic tasks</option>
+</optgroup>
+
+<optgroup label="Design & Creativity">
+<option value="shows creativity in digital design">Shows creativity in digital design</option>
+<option value="integrates visual design principles into their work">Integrates visual design principles into their work</option>
+<option value="develops visually appealing multimedia projects">Develops visually appealing multimedia projects</option>
+<option value="experiments with creative tech solutions">Experiments with creative tech solutions</option>
+<option value="balances form and function in design choices">Balances form and function in design choices</option>
+<option value="applies basic design theory effectively">Applies basic design theory effectively</option>
+<option value="creates engaging content for digital audiences">Creates engaging content for digital audiences</option>
+<option value="adjusts designs based on peer/teacher feedback">Adjusts designs based on peer/teacher feedback</option>
+<option value="makes creative choices in layout and formatting">Makes creative choices in layout and formatting</option>
+<option value="seeks out design inspiration and applies it">Seeks out design inspiration and applies it</option>
+</optgroup>
+</select>
+
+
+
+<label for="need">Area of Need:</label>
+<select id="need">
+<option value="">-- Select an area of need --</option>
+
+<optgroup label="Focus & Attention">
+<option value="is working on staying focused during class activities.">Is working on staying focused during class activities.</option>
+<option value="needs to avoid digital distractions during tech-based work.">Needs to avoid digital distractions during tech-based work.</option>
+<option value="is developing strategies to maintain focus when using devices.">Is developing strategies to maintain focus when using devices.</option>
+<option value="gets distracted by tabs and apps during work time.">Gets distracted by tabs and apps during work time.</option>
+<option value="benefits from regular teacher check-ins to stay on task.">Benefits from regular teacher check-ins to stay on task.</option>
+<option value="frequently checks unrelated websites during class.">Frequently checks unrelated websites during class.</option>
+<option value="tends to leave tasks incomplete without prompting.">Tends to leave tasks incomplete without prompting.</option>
+<option value="has difficulty maintaining sustained focus.">Has difficulty maintaining sustained focus.</option>
+<option value="struggles to transition between tasks without reminders.">Struggles to transition between tasks without reminders.</option>
+<option value="needs support managing digital distractions.">Needs support managing digital distractions.</option>
+</optgroup>
+
+<optgroup label="Time Management & Deadlines">
+<option value="needs support in submitting assignments on time.">Needs support in submitting assignments on time.</option>
+<option value="is working on meeting project deadlines more consistently.">Is working on meeting project deadlines more consistently.</option>
+<option value="needs guidance with planning larger projects.">Needs guidance with planning larger projects.</option>
+<option value="completes work close to or after the deadline.">Completes work close to or after the deadline.</option>
+<option value="struggles to meet multiple deadlines simultaneously.">Struggles to meet multiple deadlines simultaneously.</option>
+<option value="underestimates how long digital tasks will take.">Underestimates how long digital tasks will take.</option>
+<option value="misses deadlines despite time in class.">Misses deadlines despite time in class.</option>
+<option value="procrastinates on larger projects.">Procrastinates on larger projects.</option>
+<option value="gets behind due to poor pacing.">Gets behind due to poor pacing.</option>
+<option value="needs reminders to use class time wisely.">Needs reminders to use class time wisely.</option>
+</optgroup>
+
+<optgroup label="Organization & Workflow">
+<option value="finds it challenging to stay organized across platforms.">Finds it challenging to stay organized across platforms.</option>
+<option value="needs to develop stronger file organization habits.">Needs to develop stronger file organization habits.</option>
+<option value="struggles with navigation across platforms.">Struggles with navigation across platforms.</option>
+<option value="leaves files unnamed or saved incorrectly.">Leaves files unnamed or saved incorrectly.</option>
+<option value="loses progress due to poor saving habits.">Loses progress due to poor saving habits.</option>
+<option value="does not organize digital workspace for focus.">Does not organize digital workspace for focus.</option>
+<option value="starts tasks without clear steps or plans.">Starts tasks without clear steps or plans.</option>
+<option value="rarely updates or maintains digital folders.">Rarely updates or maintains digital folders.</option>
+<option value="forgets where work was saved.">Forgets where work was saved.</option>
+<option value="needs frequent support to find past work.">Needs frequent support to find past work.</option>
+</optgroup>
+</select>
+
+
+
+<label for="nextStep">Next Step:</label>
+<select id="nextStep">
+<option value="">-- Select a next step --</option>
+
+<optgroup label="Skill Practice & Support">
+<option value="is encouraged to revisit class tutorials and complete extra practice.">Is encouraged to revisit class tutorials and complete extra practice.</option>
+<option value="will benefit from reviewing feedback and resubmitting improved work.">Will benefit from reviewing feedback and resubmitting improved work.</option>
+<option value="should complete extension tasks to reinforce new concepts.">Should complete extension tasks to reinforce new concepts.</option>
+<option value="is encouraged to attend help sessions for targeted support.">Is encouraged to attend help sessions for targeted support.</option>
+</optgroup>
+
+<optgroup label="Organization & Planning">
+<option value="should use a task checklist to plan digital projects more effectively.">Should use a task checklist to plan digital projects more effectively.</option>
+<option value="is encouraged to organize digital folders and naming conventions.">Is encouraged to organize digital folders and naming conventions.</option>
+</optgroup>
+
+<optgroup label="Confidence & Independence">
+<option value="should take risks with unfamiliar platforms to build confidence.">Should take risks with unfamiliar platforms to build confidence.</option>
+<option value="is encouraged to problem-solve independently before asking for help.">Is encouraged to problem-solve independently before asking for help.</option>
+<option value="will benefit from reflecting on strengths and setting tech goals.">Will benefit from reflecting on strengths and setting tech goals.</option>
+</optgroup>
+</select>
+
+<label for="closing">Closing Statement:</label>
+<select id="closing">
+<option value="">-- Select a closing statement --</option>
+<option value="Best of luck in all of your future endeavors.">Best of luck in all of your future endeavors.</option>
+<option value="Wishing you continued success in your tech journey.">Wishing you continued success in your tech journey.</option>
+<option value="Looking forward to seeing your creativity grow in future projects.">Looking forward to seeing your creativity grow in future projects.</option>
+<option value="Great work this semester—keep it up!">Great work this semester—keep it up!</option>
+</select>
+
+
+
+<div class="output">
+<h3>Generated Comment:</h3>
+<p id="commentPreview">Your final comment will appear here.</p>
+</div>
+
+<script>
+function generateComment() {
+const name = document.getElementById("studentName").value.trim();
+const pronouns = document.getElementById("pronouns").value.trim();
+const assignment = document.getElementById("assignment").value;
+const strength = document.getElementById("strength").value;
+const need = document.getElementById("need").value;
+const nextStep = document.getElementById("nextStep").value;
+const closing = document.getElementById("closing").value;
+const preview = document.getElementById("commentPreview");
+
+if (!name || !pronouns || !assignment || !strength || !need || !nextStep || !closing) {
+preview.textContent = "Please complete all selections to generate the comment.";
+return;
+}
+
+const [subjectPronoun, objectPronoun] = pronouns.split("/") || ["they", "them"];
+const capPronoun = subjectPronoun.charAt(0).toUpperCase() + subjectPronoun.slice(1);
+const capName = name.charAt(0).toUpperCase() + name.slice(1);
+
+
+
+const comment = `${capName} ${strength}, as demonstrated in ${assignment}. ${capPronoun} ${need} ${capName} ${nextStep}. ${closing}`;
+
+
+preview.textContent = comment;
+}
+
+document.querySelectorAll('select, input').forEach(el => {
+el.addEventListener('change', generateComment);
+});
+</script>
+
+</body>
+</html>
